@@ -20,12 +20,15 @@ package managment system : pipenv
 2. run `pip install pipenv` to install pipenv
 
 3. run  `pipenv install` to create new environment based on Pipfile
+  3.1 if the python version is different than 3.7, please update in Pipfile                                                 
 
 4. Also you need download tiff image and locate in data folder under this project There is database folder. 
+  4.1 create a folder as data under this project because of data volume
 
 5. run `pipenv shell` to activate env
 
 6. modify data path in `database/convert_hdf5.py`
+  6.1 change the path of tiff and mask images
 
 7. run `database/convert_hdf5.py` to generate hdf5 file
 
